@@ -18,3 +18,12 @@ console.log("Default Param:", greetUser());
 console.log("Default Param:", greetUser("Samin"));
 
 
+const multiply = function(a, b){
+    return a * b;
+}
+console.log("Expression (multiplication):", multiply(4, 5));
+
+const divide = function(a, b){
+    return a / b;
+}
+console.log("Expression (divide):", divide(20, 5));
