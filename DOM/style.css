@@ -1,0 +1,43 @@
+.movies_name {
+    list-style: none;
+    font-size: 30px;
+}
+
+.movies_section {
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.movies_section_intro {
+    font-size: 50px;
+}
+
+.coralBG{
+    background-color: coral;
+}
+
+.plant{
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.bgLime{
+    background-color: lime;
+}
+
+.kinBridge{
+    padding: 40px;
+    margin: 50px;
+}
+
+.borderBlack{
+    border: 1px solid black;
+}
+
+.borderBlue{
+    border: 1px dashed blue;
+}
+
+.list_Style{
+    list-style: none;
+}
