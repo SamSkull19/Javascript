@@ -1,7 +1,3 @@
-// Import createElement from React (not used in this DOM example, but declared here)
-const { createElement } = require("react");
-
-
 // ==================== NodeList Example ====================
 
 // Select all list items inside movies section by class name
