@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="text_center">DOM Events</h1>
+    <div id="eventInfo" class="paragraph_test">
+        <p>
+            A DOM event is any interaction or occurrence that happens in a web page’s Document Object Model, such as a
+            mouse click, key press, or page load. Events allow developers to make web pages interactive by responding to
+            user actions. Each event can trigger an event handler (a piece of JavaScript code) that executes when the
+            event occurs. For example, clicking a button can show a message, or typing in a form can validate input. DOM
+            events can be handled using HTML attributes like onclick or by attaching listeners with addEventListener().
+            This makes dynamic, responsive, and user-friendly web applications possible.
+        </p>
+    </div>
+
+    <div class="buttonContainer">
+        <button class="buttonBase" onclick="makeRed()">Red</button>
+        <button class="buttonBase" id="makeBlue">Blue</button>
+        <button class="buttonBase" id="makeGreen">Green</button>
+        <button class="buttonBase" id="makeYellow">Yellow</button>
+        <button class="buttonBase" id="makeSlateBlue">SlateBlue</button>
+        <button class="buttonBase" id="makeGray">Gray</button>
+        <button class="buttonBase" id="makeViolet">Violet</button>
+        <button class="buttonBase" id="makeBrown">Brown</button>
+        <button class="buttonBase" onclick="makeTomato()">Tomato</button>
+        <button class="buttonBase" id="makeOrange">Orange</button>
+    </div>
+
+    <div style="margin-top: 20px; display: flex; justify-content: space-evenly; align-items: center;">
+        <button class="buttonBase" id="testing">Test</button>
+        <button class="buttonBase" onclick="makeWhite()">While</button>
+    </div>
+
+    <script src="OnClickEvent.js"></script>
+</body>
+</html>

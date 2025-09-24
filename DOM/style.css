@@ -41,3 +41,32 @@
 .list_Style{
     list-style: none;
 }
+
+.text_center{
+    text-align: center;
+}
+
+.paragraph_test{
+    text-align: justify;
+    border: 1px solid black;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 30px;
+    border-radius: 30px;
+}
+
+.buttonBase{
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.buttonContainer{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
