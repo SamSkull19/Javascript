@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div>
+        <div class="border max-w-[450px] mx-auto mt-10 rounded-lg">
+            <div class="m-4 text-lg">
+                <h3 class="font-bold">1. Which tag is used in HTML to create a hyperlink?</h3>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(a)</span><p id="quizAns1OptionA">&ltlink&gt</p> <button id="quizAns1OptionABtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(b)</span><p id="quizAns1OptionB">&lta&gt</p> <button id="quizAns1OptionBBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(c)</span><p id="quizAns1OptionC">&lthref&gt</p> <button id="quizAns1OptionCBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(d)</span><p id="quizAns1OptionD">&ltp&gt</p> <button id="quizAns1OptionDBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="quizAns1Container" class="border max-w-[450px] mx-auto mt-5 rounded-lg">
+            <h3 class="m-4 text-lg font-bold">Answer : <span id="quizAns1" class="font-semibold">Select You Answer</span></h3>
+        </div>
+    </div>
+    
+    <div>
+        <div class="border max-w-[450px] mx-auto mt-10 rounded-lg">
+            <div class="m-4 text-lg">
+                <h3 class="font-bold">2. What does CSS stand for?</h3>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(a)</span><p id="quizAns2OptionA">Computer Style Sheets</p> <button id="quizAns2OptionABtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(b)</span><p id="quizAns2OptionB">Cascading Style Sheets</p> <button id="quizAns2OptionBBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(c)</span><p id="quizAns2OptionC">Colorful Style Sheets</p> <button id="quizAns2OptionCBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(d)</span><p id="quizAns2OptionD">Creative Style System</p> <button id="quizAns2OptionDBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="quizAns2Container" class="border max-w-[450px] mx-auto mt-5 rounded-lg">
+            <h3 class="m-4 text-lg font-bold">Answer : <span id="quizAns2" class="font-semibold">Select You Answer</span></h3>
+        </div>
+    </div>
+    
+    <div>
+        <div class="border max-w-[450px] mx-auto mt-10 rounded-lg">
+            <div class="m-4 text-lg">
+                <h3 class="font-bold">3. Which of the following is NOT a JavaScript data type?</h3>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(a)</span><p id="quizAns3OptionA">String</p> <button id="quizAns3OptionABtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(b)</span><p id="quizAns3OptionB">Boolean</p> <button id="quizAns3OptionBBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(c)</span><p id="quizAns3OptionC">Float</p> <button id="quizAns3OptionCBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(d)</span><p id="quizAns3OptionD"> Undefined</p> <button id="quizAns3OptionDBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="quizAns3Container" class="border max-w-[450px] mx-auto mt-5 rounded-lg">
+            <h3 class="m-4 text-lg font-bold">Answer : <span id="quizAns3" class="font-semibold">Select You Answer</span></h3>
+        </div>
+    </div>
+    
+    <div>
+        <div class="border max-w-[450px] mx-auto mt-10 rounded-lg">
+            <div class="m-4 text-lg">
+                <h3 class="font-bold">4. In C programming, which symbol is used to indicate a pointer?</h3>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(a)</span><p id="quizAns4OptionA">*</p> <button id="quizAns4OptionABtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(b)</span><p id="quizAns4OptionB">&</p> <button id="quizAns4OptionBBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(c)</span><p id="quizAns4OptionC">#</p> <button id="quizAns4OptionCBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(d)</span><p id="quizAns4OptionD">%</p> <button id="quizAns4OptionDBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="quizAns4Container" class="border max-w-[450px] mx-auto mt-5 rounded-lg">
+            <h3 class="m-4 text-lg font-bold">Answer : <span id="quizAns4" class="font-semibold">Select You Answer</span></h3>
+        </div>
+    </div>
+    
+    <div class="mb-10">
+        <div class="border max-w-[450px] mx-auto mt-10 rounded-lg">
+            <div class="m-4 text-lg">
+                <h3 class="font-bold">5. Which company developed the Python programming language?</h3>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(a)</span><p id="quizAns5OptionA">Google</p> <button id="quizAns5OptionABtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(b)</span><p id="quizAns5OptionB">Microsoft</p> <button id="quizAns5OptionBBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(c)</span><p id="quizAns5OptionC">Python Software Foundation</p> <button id="quizAns5OptionCBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+                <div class="flex item-center justify evenly font-semibold mt-3">
+                    <span class="mr-1">(d)</span><p id="quizAns5OptionD">Bell Labs</p> <button id="quizAns5OptionDBtn"
+                        class="ml-5 border px-5 rounded-lg bg-lime-200">Select This</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="quizAns5Container" class="border max-w-[450px] mx-auto mt-5 rounded-lg">
+            <h3 class="m-4 text-lg font-bold">Answer : <span id="quizAns5" class="font-semibold">Select You Answer</span></h3>
+        </div>
+    </div>
+    <script src="AddEventListener_QuizTask.js"></script>
+</body>
+
+</html>
