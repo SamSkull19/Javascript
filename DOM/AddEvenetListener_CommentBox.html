@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <section class="max-w-[1280px] mx-auto mt-12">
+        <h2 class="text-5xl">Awesome Comment box! <span class="text-orange-700">Write what is in your mind!!!</span></h2>
+        <h4 class="text-3xl my-10">All Comments are here...</h4>
+
+        <div id="comment_container">
+            <p class="text-lg font-semibold text-violet-600 border p-5 rounded-sm mt-5">Technology has transformed the way we live, work, and communicate. From smartphones to artificial intelligence, innovations continue to make life faster and more convenient. Staying updated is key to keeping up with this rapid change.</p>
+
+            <p class="text-lg font-semibold text-violet-600 border p-5 rounded-sm mt-5">Protecting the environment is essential for future generations. Simple actions like reducing waste, conserving water, and planting trees can make a big difference. Collective efforts can help combat climate change effectively.</p>
+
+            <p class="text-lg font-semibold text-violet-600 border p-5 rounded-sm mt-5">Education opens the door to endless opportunities. It empowers individuals with knowledge, critical thinking, and skills needed to succeed in life. Lifelong learning ensures continuous personal growth.</p>
+
+            <p class="text-lg font-semibold text-violet-600 border p-5 rounded-sm mt-5">Social media connects people worldwide but can also affect mental health. Responsible use is necessary to enjoy its benefits without negative impacts. It has become a powerful tool for communication and learning.</p>
+        </div>
+
+        <div class="my-10">
+            <p class="text-2xl font-bold">Enter Your Comments Here....</p>
+
+            <textarea name="comments" id="comments_input" class="mt-5 border border-violet-800 text-violet-600 font-semibold rounded-sm w-full h-[150px] p-5 text-lg"></textarea>
+
+            <button id="submitBTN" class="py-4 px-10 border rounded-sm mt-4 font-semibold bg-violet-800 text-white text-lg">Submit Your Comment</button>
+        </div>
+    </section>
+
+    <script src="AddEvenetListener_CommentBox.js"></script>
+</body>
+
+</html>
