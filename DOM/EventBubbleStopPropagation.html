@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event Bubble</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section id="sectionTarget" class="max-w-[1180px] border p-10 mx-auto mt-10 bg-violet-900 rounded-md">
+        <div id="divTarget" class="border p-10 bg-fuchsia-950 rounded-md">
+            <ul id="ulTarget" class="border p-10 flex flex-col gap-10 font-semibold text-white text-xl bg-gray-800 rounded-md">
+                <li id="li1Target" class="border p-5 bg-stone-600 rounded-md">1. Cricket</li>
+                <li id="li2Target" class="border p-5 bg-stone-600 rounded-md">2. Football</li>
+                <li id="li3Target" class="border p-5 bg-stone-600 rounded-md">3. Badminton</li>
+                <li id="li4Target" class="border p-5 bg-stone-600 rounded-md">4. Hockey</li>
+                <li id="li5Target" class="border p-5 bg-stone-600 rounded-md">5. Golf</li>
+                <li id="li6Target" class="border p-5 bg-stone-600 rounded-md">6. BasketBall</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="max-w-[1180px] border p-10 mx-auto mt-10 bg-violet-600 rounded-md">
+        <div class="text-white text-xl font-semibold">
+            Clicked Targets
+        </div>
+        <div id="clickedSections" class="text-white text-xl font-normal border p-5 mt-5">
+
+        </div>
+    </section>
+
+    <script src="EventBubbleStopPropagation.js"></script>
+</body>
+</html>
