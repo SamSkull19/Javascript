@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event Bubble</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <section class="max-w-[1180px] mx-auto mt-10">
+        <div class="w-1/2 mx-auto">
+            <ul id="ulTarget"
+                class=" border p-10 flex flex-col gap-5 font-semibold text-white text-xl bg-gray-800 rounded-md">
+                <li class="sportsItems border p-5 bg-stone-600 rounded-md">1. Cricket</li>
+                <li class="sportsItems border p-5 bg-stone-600 rounded-md">2. Football</li>
+                <li class="sportsItems border p-5 bg-stone-600 rounded-md">3. Badminton</li>
+                <li class="sportsItems border p-5 bg-stone-600 rounded-md">4. Hockey</li>
+                <li class="sportsItems border p-5 bg-stone-600 rounded-md">5. Golf</li>
+                <li class="sportsItems border p-5 bg-stone-600 rounded-md">6. BasketBall</li>
+            </ul>
+        </div>
+
+        <div class="mt-10 w-1/2 mx-auto">
+            <div class="px-10 w-full border p-5 bg-stone-600 rounded-md font-semibold text-white text-xl bg-gray-800 rounded-md">
+                <label>
+                    Enter Sports Name :
+                    <input id="sportsName" type="text" class="p-3 ml-3 bg-stone-800 rounded-md border border-stone-950">
+                </label>
+
+                <div class="w-full flex justify-center">
+                    <button id="sportBTN" class="mt-4 bg-stone-950 px-10 py-3 rounded-md w-1/2">Enter</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-[1180px] mx-auto mt-10">
+        <div class="w-1/2 mx-auto">
+            <ul id="ulTargetCity"
+                class=" border p-10 flex flex-col gap-5 font-semibold text-white text-xl bg-gray-800 rounded-md">
+                <li class="cityItems border p-5 bg-stone-600 rounded-md">1. Dhaka</li>
+                <li class="cityItems border p-5 bg-stone-600 rounded-md">2. Chattogram</li>
+                <li class="cityItems border p-5 bg-stone-600 rounded-md">3. Sylhet</li>
+                <li class="cityItems border p-5 bg-stone-600 rounded-md">4. Rajshahi</li>
+                <li class="cityItems border p-5 bg-stone-600 rounded-md">5. Cumilla</li>
+                <li class="cityItems border p-5 bg-stone-600 rounded-md">6. Barishal</li>
+            </ul>
+        </div>
+
+        <div class="mt-10 w-1/2 mx-auto">
+            <div class="px-10 w-full border p-5 bg-stone-600 rounded-md font-semibold text-white text-xl bg-gray-800 rounded-md">
+                <label>
+                    Enter City Name :
+                    <input id="cityName" type="text" class="p-3 ml-3 bg-stone-800 rounded-md border border-stone-950">
+                </label>
+
+                <div class="w-full flex justify-center">
+                    <button id="cityBTN" class="mt-4 bg-stone-950 px-10 py-3 rounded-md w-1/2">Enter</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="EventDelegation.js"></script>
+</body>
+
+</html>
