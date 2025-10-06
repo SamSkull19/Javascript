@@ -101,3 +101,43 @@ Methods:
 fetchNewData() mimics the behavior of a real fetch API request.
 ----------------------------------------
 */
+
+
+// Array of API endpoints from JSONPlaceholder
+const urls = [
+  'https://jsonplaceholder.typicode.com/posts',     // List of posts
+  'https://jsonplaceholder.typicode.com/comments',  // List of comments
+  'https://jsonplaceholder.typicode.com/albums',    // List of albums
+  'https://jsonplaceholder.typicode.com/photos',    // List of photos
+  'https://jsonplaceholder.typicode.com/todos',     // List of todos
+  'https://jsonplaceholder.typicode.com/users'      // List of users
+];
+
+// Use Promise.all to fetch all URLs in parallel
+Promise.all(
+  // Map each URL to a fetch request
+  urls.map(url => {
+    return fetch(url)              // Send a GET request to the URL
+      .then(res => res.json())     // Parse the response as JSON
+      .then(data => data);         // Return the parsed data
+  })
+)
+.then(res => res)                  // res is an array of results (not necessary, can be skipped)
+.then(data => console.log(data))   // Log all results after all Promises have resolved
+
+/*
+Explanation:
+
+1. urls.map(url => ...) 
+   - Iterates through each API endpoint and creates a Promise for each fetch call.
+   - Each fetch call returns a Promise that resolves with the JSON data.
+
+2. Promise.all([...])
+   - Takes an array of Promises and returns a single Promise.
+   - This Promise resolves only when all individual Promises are resolved.
+   - If any Promise is rejected, Promise.all immediately rejects.
+
+3. .then(data => console.log(data))
+   - 'data' is an array containing the JSON data from all 6 API endpoints.
+   - The order of data matches the order of URLs in the 'urls' array.
+*/
